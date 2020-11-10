@@ -1,0 +1,115 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+/* NGX Datatable CSS */
+@import '~assets/styles/ngx-datatable/_index.css';
+@import '~assets/styles/ngx-datatable/_dark.css';
+@import '~assets/styles/ngx-datatable/_material.css';
+@import '~assets/styles/ngx-datatable/_bootstrap.css';
+@import '~assets/styles/ngx-datatable/_icons.css';
+
+ion-app {
+    direction: rtl;
+}
+
+.full-height {
+    height: 100%;
+  }
+
+.red-text {
+    color:  #d34a4a;
+}
+
+.main-bg{
+    background: rgb(244,255,233);
+    background: linear-gradient(180deg, rgba(244,255,233,1) 0%, rgba(238,255,225,0.981127485173757) 100%);
+}
+
+.main-img-def{
+    margin: 40px;
+}
+
+.main-text-style{
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.5vh;
+    // // --padding-bottom: 5px;
+    // --padding-start: 50px;
+    // --padding-end: 10px;
+}
+
+
+    .btn-grad {background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%)}
+    .btn-grad {
+       margin: 10px;
+       padding: 15px 45px;
+       text-align: center;
+       text-transform: uppercase;
+       transition: 0.5s;
+       background-size: 200% auto;
+       color: white;            
+       box-shadow: 0 0 20px #eee;
+       border-radius: 10px;
+    //    display: block;
+
+       font-size: larger;
+     }
+
+     .btn-grad:hover {
+       background-position: right center; /* change the direction of the change here */
+       color: #fff;
+       text-decoration: none;
+     }
+
+     ion-col.no-padding {
+        padding: 0;
+        
+      }
+
+      ion-col.no-margin {
+        margin: 0;
+      }
+    
+
+      ion-input {
+        --padding-top: 0;
+        --padding-left: 0;
+        --padding-bottom: 0;
+        --padding-right: 0;
+        
+      }
+
+      input {
+        --padding-top:0;
+        --padding-left: 0;
+        --padding-bottom: 0;
+        --padding-right: 0;
+        
+      }
+
+

@@ -1,0 +1,74 @@
+{
+    "items": [
+        {
+            "title": "wallTin5",
+            "width": 1,
+            "price": 55
+        },
+        {
+            "title": "wallTin7",
+            "width": 1,
+            "price": 65
+        },
+        {
+            "title": "wallTin10",
+            "width": 1,
+            "price": 65
+        },
+        {
+            "title": "roofTin5",
+            "width": 1.04,
+            "price": 55
+        },
+        {
+            "title": "roofTin7",
+            "width": 1.04,
+            "price": 65
+        },
+        {
+            "title": "roofTin10",
+            "width": 1.04,
+            "price": 75
+        },
+        {
+            "title": "utin5",
+            "width": 3,
+            "price": 30
+        },
+        {
+            "title": "utin7",
+            "width": 3,
+            "price": 40
+        },
+        {
+            "title": "utin10",
+            "width": 3,
+            "price": 50
+        },
+        {
+            "title": "ualu5",
+            "width": 6,
+            "price": 110
+        },
+        {
+            "title": "ualu7",
+            "width": 6,
+            "price": 120
+        },
+        {
+            "title": "ualu10",
+            "width": 6,
+            "price": 200
+        },
+        {
+            "title": "angle5",
+            "width": 3,
+            "price": 30
+        },
+        {
+            "title": "angle10",
+            "width": 3,
+            "price": 40
+        }
+    ]
+}

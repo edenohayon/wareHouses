@@ -1,0 +1,18 @@
+.input-grid {
+    // display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25vw;
+    margin-left: 25vw;
+}
+
+ion-list ion-item {
+    --border-color: var(--ion-color-success-tint);
+    --highlight-color-focused:#ffd534;
+
+  }
+
+
+  ion-segment-button{
+    --color-checked:var(--ion-color-warning);
+  }

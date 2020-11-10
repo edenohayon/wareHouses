@@ -1,0 +1,145 @@
+<ion-content [fullscreen]="true">
+
+  <ion-grid class="full-height ">
+    <ion-row style="height: 100%;">
+      <!-- <ion-col size="3"></ion-col> -->
+      <ion-col class="main-bg">
+
+        <ion-row class="ion-justify-content-start main-img-def">
+          <ion-col size="7">
+            <ion-img src="assets/images/elit_2.png"></ion-img>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <ion-textarea disabled class="main-text-style">
+              הכנס את המידות למחסן החדש
+            </ion-textarea>
+          </ion-col>
+        </ion-row>
+
+        <!-- <ion-grid class="input-grid">
+          <ion-row justify-content-center>
+            <ion-col size="2">
+              אורך:
+            </ion-col>
+            <ion-col>
+              <ion-input type="number">
+              </ion-input>
+            </ion-col>
+
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="2">
+              רוחב:
+            </ion-col>
+            <ion-col>
+              <ion-input type="number">
+
+              </ion-input>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="2">
+              גובה:
+            </ion-col>
+            <ion-col>
+              <ion-input type="number">
+
+              </ion-input>
+            </ion-col>
+          </ion-row>
+        </ion-grid> -->
+
+        <!-- <ion-grid class="input-grid">
+          <ion-list>
+            <ion-item>
+              <ion-label>אורך</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>רוחב</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>גובה</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-list>
+        </ion-grid> -->
+
+        <ion-grid class="input-grid">
+          <ion-list>
+            <ion-item *ngFor="let key of inputs | keyvalue">
+              <ion-label>{{key.value.title}}</ion-label>
+              <ion-input [(ngModel)]="key.value.input" (ionFocus)="onInputFocus($event)" type=number></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-col>
+                <ion-label>שיפוע</ion-label>
+              </ion-col>
+
+              <!-- <ion-buttons>
+               <ion-button (click)="onInclineClick('left')">
+                  <ion-icon name="arrow-back" style="color: black;"></ion-icon>
+                </ion-button>
+                <ion-button (click)="onInclineClick('down')">
+                  <ion-icon name="arrow-down" style="color: black;"></ion-icon>
+                </ion-button>
+                <ion-button (click)="onInclineClick('width')">
+                  <ion-icon name="arrow-forward" style="color: black;"></ion-icon>
+                  רוחב
+                </ion-button>
+                <ion-button (click)="onInclineClick('length')">
+                  <ion-icon name="arrow-up" style="color: black;"></ion-icon>
+                  אורך
+                </ion-button>
+              </ion-buttons> -->
+              <ion-col>
+                <ion-segment (ionChange)="onInclineClick($event)" [(ngModel)]="incline.input">
+                  <ion-segment-button value="length" layout="icon-start">
+                    <ion-icon name="arrow-up" style="color: black;"></ion-icon>
+                    <ion-label>
+
+                      אורך
+                    </ion-label>
+                  </ion-segment-button>
+                  <ion-segment-button value="width" layout="icon-start">
+                    <ion-icon name="arrow-forward" style="color: black;"></ion-icon>
+                    <ion-label>
+                      רוחב
+                    </ion-label>
+                  </ion-segment-button>
+                </ion-segment>
+              </ion-col>
+
+            </ion-item>
+
+          </ion-list>
+        </ion-grid>
+
+        <ion-row *ngIf=showWarning class="ion-justify-content-center">
+          הזן פרטים חוקיים
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="ion-text-center ion-justify-content-center">
+            <div text-center>
+              <button class="btn-grad" (click)="nextPage()">לחצו כאן!</button>
+            </div>
+
+          </ion-col>
+        </ion-row>
+
+      </ion-col>
+      <!-- <ion-col size="3"></ion-col> -->
+    </ion-row>
+  </ion-grid>
+
+  <!-- </div> -->
+
+</ion-content>
