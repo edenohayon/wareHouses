@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { OutputpagePageRoutingModule } from './outputpage-routing.module';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 import { OutputpagePage } from './outputpage.page';
 
@@ -13,7 +14,8 @@ import { OutputpagePage } from './outputpage.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    OutputpagePageRoutingModule
+    OutputpagePageRoutingModule,
+    NgxDatatableModule
   ],
   declarations: [OutputpagePage]
 })
